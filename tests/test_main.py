@@ -9,6 +9,6 @@ def test_read_root():
     assert response.json() == {"Hello": "World"}
 
 def test_read_item():
-    response = client.get("/items/42?q=test")
+    response = client.get("/items/42?query=test")
     assert response.status_code == 200
-    assert response.json() == {"item_id": 42, "q": "test"}
+    assert response.json() == {"item_id": 42, "query": "test"}
