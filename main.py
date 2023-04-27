@@ -5,13 +5,6 @@ app = FastAPI()
 
 @app.get("/")
 def read_root():
-    """
-        Function which returns a simple dictionary
-
-        Returns:
-            dict
-    """
-
     return {"Hello": "World"}
 
 
